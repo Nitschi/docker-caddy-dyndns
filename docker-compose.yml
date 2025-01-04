@@ -1,0 +1,16 @@
+services:
+  dyndns:
+    container_name: dyndns
+    volumes:
+      - "./Caddyfile:/etc/caddy/Caddyfile"
+    restart: unless-stopped
+    image: caddy-dyndns
+    build:
+      context : .
+      dockerfile: Dockerfile
+    environment:
+      - ZONE
+      - SUBDOMAINS
+      - NETCUP_CUSTOMER_NUMBER
+      - NETCUP_API_KEY
+      - NETCUP_API_PASSWORD

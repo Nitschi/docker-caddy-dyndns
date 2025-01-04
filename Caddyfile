@@ -1,0 +1,17 @@
+{
+	dynamic_dns {
+		provider netcup {
+			customer_number {$NETCUP_CUSTOMER_NUMBER}
+			api_key {$NETCUP_API_KEY}
+			api_password {$NETCUP_API_PASSWORD}
+		}
+
+		domains {
+			{$ZONE} {$SUBDOMAINS}
+		}
+
+		versions ipv4
+		check_interval 5m
+		ttl 5m
+	}
+}
