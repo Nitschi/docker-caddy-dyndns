@@ -6,8 +6,7 @@
 			api_password {$NETCUP_API_PASSWORD}
 		}
 
-		# Second line is for an optional additional zone in the same account.
-		# Leave ZONE2/SUBDOMAINS2 unset and it resolves to a blank (ignored) line.
+		# Optional second zone. Empty ZONE2/SUBDOMAINS2 leaves a blank line.
 		domains {
 			{$ZONE} {$SUBDOMAINS}
 			{$ZONE2} {$SUBDOMAINS2}
