@@ -11,6 +11,8 @@ services:
     environment:
       - ZONE
       - SUBDOMAINS
+      - ZONE2
+      - SUBDOMAINS2
       - NETCUP_CUSTOMER_NUMBER
       - NETCUP_API_KEY
       - NETCUP_API_PASSWORD
