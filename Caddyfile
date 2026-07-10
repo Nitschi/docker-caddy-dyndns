@@ -6,8 +6,10 @@
 			api_password {$NETCUP_API_PASSWORD}
 		}
 
+		# Optional second zone. Empty ZONE2/SUBDOMAINS2 leaves a blank line.
 		domains {
 			{$ZONE} {$SUBDOMAINS}
+			{$ZONE2} {$SUBDOMAINS2}
 		}
 
 		versions ipv4
